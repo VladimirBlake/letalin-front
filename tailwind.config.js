@@ -17,6 +17,9 @@ module.exports = {
       green: "#178080",
       white: "#FFFFFF",
     },
+    backgroundImage: {
+      intro: "url('/intro.png')",
+    },
     fontFamily: {
       objectSans: ["Object Sans", "sans-serif"],
       darco: ["Darco", "sans-serif"],
