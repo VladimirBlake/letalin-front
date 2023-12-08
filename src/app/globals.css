@@ -1,5 +1,12 @@
 @tailwind base;
 @tailwind components;
+
+@layer base {
+  html {
+    @apply text-black;
+  }
+}
+
 @tailwind utilities;
 
 :root {
@@ -8,20 +15,40 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@font-face {
+  font-family: "Object Sans";
+  src: url("../fonts/ObjectSans/ObjectSans-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Object Sans";
+  src: url("../fonts/ObjectSans/ObjectSans-Heavy.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Darco";
+  src: url("../fonts/Darco/3_Darco_Light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Darco";
+  src: url("../fonts/Darco/4_Darco_Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Darco";
+  src: url("../fonts/Darco/6_Darco_Bold.otf");
+  font-weight: 700;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
