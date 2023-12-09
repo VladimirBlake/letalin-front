@@ -40,11 +40,11 @@ export default function ProfessionalsSection() {
   }
 
   return (
-    <section className="px-4 pt-16 sm:container sm:mx-auto">
-      <h2 className="font-darco font-bold text-2xl lg:text-3xl">
+    <section className="px-4 pt-16 sm:container sm:mx-auto xl:px-0 xl:pt-[100px]">
+      <h2 className="font-darco font-bold text-2xl lg:text-3xl xl:text-4xl">
         Доверьте работу профессионалам!
       </h2>
-      <p className="mt-2 mb-4 lg:text-lg">
+      <p className="mt-2 mb-4 lg:text-lg xl:text-base xl:w-[500px] xl:mt-5 xl:mb-9">
         Наши сотрудники — эксперты строительного дела. Средний стаж — более 9
         лет в строительной сфере и проектировке!
       </p>
@@ -61,13 +61,13 @@ export default function ProfessionalsSection() {
         <SplideTrack>
           {expertChunks.map((chunk, i) => (
             <SplideSlide key={i}>
-              <div className="grid grid-cols-[156px,156px] md:grid-cols-[156px,156px,156px] lg:flex justify-between lg:justify-center gap-x-12 flex-wrap gap-y-9">
+              <div className="grid grid-cols-[156px,156px] md:grid-cols-[156px,156px,156px] lg:flex justify-between lg:justify-center lg:gap-x-12 xl:gap-x-8 flex-wrap gap-y-9">
                 {chunk.map((expert, i) => (
-                  <div key={i} className="lg:w-[156px]">
+                  <div key={i} className="lg:w-[156px] xl:w-[224px]">
                     <Image
                       src={expert.image}
                       alt=""
-                      className="w-[156px] h-[156px]"
+                      className="w-[156px] h-[156px] xl:w-[224px] xl:h-[224px]"
                     />
                     <p className="font-darco font-bold text-sm text-center mt-2">
                       {expert.name}

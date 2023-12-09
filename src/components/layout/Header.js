@@ -6,9 +6,9 @@ import Link from "next/link";
 export default function Header() {
   return (
     <div className="hidden lg:block lg:fixed lg:top-0 lg:z-50 h-24 bg-white w-full">
-      <div className="flex justify-between container mx-auto items-center h-full px-4">
+      <div className="flex justify-between container mx-auto items-center h-full px-4 xl:px-0">
         <Image src={Logo} alt="" className="w-[45px] h-auto" />
-        <nav className="font-darco list-none flex gap-x-9 relative left-12">
+        <nav className="font-darco list-none flex gap-x-9 relative left-12 xl:left-16">
           <li className="hover:text-green transition-all">
             <Link href="">Главная</Link>
           </li>

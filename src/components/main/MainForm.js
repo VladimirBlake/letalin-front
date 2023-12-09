@@ -75,7 +75,7 @@ export default function MainForm() {
           </p>
         )}
       </div>
-      <button className="w-full h-[52px] mt-6 text-white bg-green rounded-lg">
+      <button className="w-full h-[52px] mt-6 text-white bg-green rounded-lg xl:mt-4 xl:w-[180px] xl:h-[40px]">
         Заказать проект
       </button>
     </form>

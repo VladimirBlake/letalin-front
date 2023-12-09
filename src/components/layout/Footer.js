@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <footer>
-      <div className="px-4 pt-11 pb-9">
-        <p className="font-darco font-bold text-xl uppercase text-center lg:text-3xl">
+      <div className="px-4 pt-11 pb-9 xl:pt-[100px] xl:pb-14">
+        <p className="font-darco font-bold text-xl uppercase text-center lg:text-3xl xl:text-4xl">
           ЛЕТАТЛИН — все начинается с плана!
         </p>
       </div>
