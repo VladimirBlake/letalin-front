@@ -37,7 +37,7 @@ export default function ProfessionalsPagination({
       ))}
       <div
         onClick={() => {
-          if (currentPage !== 4) {
+          if (currentPage !== pagesNum) {
             setPage(currentPage + 1);
           }
         }}

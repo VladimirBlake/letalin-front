@@ -31,7 +31,9 @@ const items = [
 export default function ServicesSection() {
   return (
     <section className="px-4 pt-16 sm:container sm:mx-auto">
-      <h2 className="font-darco font-bold text-2xl">Чем можем помочь?</h2>
+      <h2 className="font-darco font-bold text-2xl md:text-3xl">
+        Чем можем помочь?
+      </h2>
       <div className="grid grid-cols-1 mt-4 gap-y-3 sm:grid-cols-2 sm:gap-x-3">
         {items.map((x) => (
           <ServicesItem key={x.name} {...x} />

@@ -1,6 +1,7 @@
 import HeaderMobile from "@/components/layout/HeaderMobile";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html className="font-objectSans" lang="en">
       <body>
-        <HeaderMobile />
+        <header>
+          <HeaderMobile />
+          <Header />
+        </header>
         {children}
         <Footer />
       </body>

@@ -11,7 +11,7 @@ export default function HeaderMobile() {
   const [isHamburgerOpen, setHamburgerOpen] = useState(false);
   return (
     <>
-      <header className="h-16 bg-white px-4 flex justify-between items-center z-50 fixed w-full top-0">
+      <div className="h-16 bg-white px-4 flex justify-between items-center z-50 fixed w-full top-0 lg:hidden">
         <Image src={Logo} alt="" className="w-[45px] h-auto" />
         <div className="flex items-center">
           <div className="w-9 h-9 bg-green rounded-full flex items-center justify-center">
@@ -29,7 +29,7 @@ export default function HeaderMobile() {
             rounded
           />
         </div>
-      </header>
+      </div>
       <MobileMenu isMenuOpen={isHamburgerOpen} />
     </>
   );

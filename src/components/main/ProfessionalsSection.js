@@ -7,13 +7,24 @@ import Expert1 from "@/images/experts/expert1.png";
 import Image from "next/image";
 import { experts } from "@/data/Experts";
 import ProfessionalsPagination from "./ProfessionalsPagination";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 export default function ProfessionalsSection() {
   const slideRef = useRef(null);
+  const { width, height } = useWindowDimensions();
   const [currentPage, setPage] = useState(1);
   slideRef.current?.go(currentPage - 1);
-  const expertChunks = experts.reduce((resultArray, item, index) => {
-    const chunkIndex = Math.floor(index / 4);
+
+  let chunks = 4;
+  let pages = 4;
+
+  if (width >= 768) {
+    chunks = 6;
+    pages = 3;
+  }
+
+  let expertChunks = experts.reduce((resultArray, item, index) => {
+    const chunkIndex = Math.floor(index / chunks);
 
     if (!resultArray[chunkIndex]) {
       resultArray[chunkIndex] = []; // start a new chunk
@@ -24,12 +35,16 @@ export default function ProfessionalsSection() {
     return resultArray;
   }, []);
 
+  if (width >= 1024) {
+    expertChunks = [experts];
+  }
+
   return (
     <section className="px-4 pt-16 sm:container sm:mx-auto">
-      <h2 className="font-darco font-bold text-2xl">
+      <h2 className="font-darco font-bold text-2xl lg:text-3xl">
         Доверьте работу профессионалам!
       </h2>
-      <p className="mt-2 mb-4">
+      <p className="mt-2 mb-4 lg:text-lg">
         Наши сотрудники — эксперты строительного дела. Средний стаж — более 9
         лет в строительной сфере и проектировке!
       </p>
@@ -46,9 +61,9 @@ export default function ProfessionalsSection() {
         <SplideTrack>
           {expertChunks.map((chunk, i) => (
             <SplideSlide key={i}>
-              <div className="grid grid-cols-[156px,156px] justify-between flex-wrap gap-y-9">
+              <div className="grid grid-cols-[156px,156px] md:grid-cols-[156px,156px,156px] lg:flex justify-between lg:justify-center gap-x-12 flex-wrap gap-y-9">
                 {chunk.map((expert, i) => (
-                  <div key={i}>
+                  <div key={i} className="lg:w-[156px]">
                     <Image
                       src={expert.image}
                       alt=""
@@ -65,11 +80,13 @@ export default function ProfessionalsSection() {
           ))}
         </SplideTrack>
 
-        <ProfessionalsPagination
-          setPage={setPage}
-          currentPage={currentPage}
-          pagesNum={4}
-        />
+        {width < 1024 && (
+          <ProfessionalsPagination
+            setPage={setPage}
+            currentPage={currentPage}
+            pagesNum={pages}
+          />
+        )}
       </Splide>
     </section>
   );
