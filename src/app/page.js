@@ -1,5 +1,6 @@
 import AboutSection from "@/components/main/AboutSection";
 import IntroSection from "@/components/main/IntroSection";
+import ProfessionalsSection from "@/components/main/ProfessionalsSection";
 import ServicesSection from "@/components/main/ServicesSection";
 import Image from "next/image";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <IntroSection />
       <AboutSection />
       <ServicesSection />
+      <ProfessionalsSection />
     </main>
   );
 }
