@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section className="px-4 pt-4">
+    <section className="px-4 pt-4 sm:container mx-auto">
       <div>
         <p>
           <span className="font-darco font-bold">ЛЕТАТЛИН</span> — бюро
@@ -14,9 +14,14 @@ export default function AboutSection() {
         </p>
       </div>
       <div>
-        <button className="w-full h-[52px] mt-6 text-white bg-green rounded-lg">
+        <button className="w-full h-[52px] mt-6 text-white bg-green rounded-lg sm:w-40 sm:h-12">
           Заказать проект
         </button>
+        <div className="hidden md:block px-5 py-3">
+          <span className="uppercase font-darco font-bold">
+            Проектируем высокотехнологические объекты с 2017 года.
+          </span>
+        </div>
       </div>
     </section>
   );

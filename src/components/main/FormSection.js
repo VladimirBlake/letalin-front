@@ -3,7 +3,7 @@ import MainForm from "./MainForm";
 
 export default function FormSection() {
   return (
-    <section className="px-4 flex flex-col pt-16">
+    <section className="px-4 flex flex-col pt-16 sm:container sm:mx-auto">
       <div>
         <h2 className="font-darco font-bold text-2xl">Остались вопросы?</h2>
         <p className="mt-1">

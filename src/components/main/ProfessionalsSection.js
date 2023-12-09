@@ -25,7 +25,7 @@ export default function ProfessionalsSection() {
   }, []);
 
   return (
-    <section className="px-4 pt-16">
+    <section className="px-4 pt-16 sm:container sm:mx-auto">
       <h2 className="font-darco font-bold text-2xl">
         Доверьте работу профессионалам!
       </h2>
@@ -46,9 +46,9 @@ export default function ProfessionalsSection() {
         <SplideTrack>
           {expertChunks.map((chunk, i) => (
             <SplideSlide key={i}>
-              <div className="flex justify-between flex-wrap gap-y-9">
+              <div className="grid grid-cols-[156px,156px] justify-between flex-wrap gap-y-9">
                 {chunk.map((expert, i) => (
-                  <div key={i} className="basis-[156px]">
+                  <div key={i}>
                     <Image
                       src={expert.image}
                       alt=""
