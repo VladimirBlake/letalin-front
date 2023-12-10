@@ -3,9 +3,13 @@ import Image from "next/image";
 
 export default function AboutIntroSection() {
   return (
-    <section className="mt-16 pt-7 flex flex-col items-center px-4 lg:mt-24 xl:px-0">
-      <Image className="w-[260px] h-auto" src={Abstract} alt="" />
-      <div className="mt-10">
+    <section className="mt-16 pt-7 flex flex-col items-center px-4 sm:container sm:mx-auto lg:mt-24 xl:px-0 xl:flex-row xl:pt-14">
+      <Image
+        className="w-[260px] h-auto xl:w-[350px] xl:ml-36 order-2"
+        src={Abstract}
+        alt=""
+      />
+      <div className="mt-10 xl:w-[625px] order-1 xl:mt-0">
         <p>
           Компания <span className="font-darco font-bold">ЛЕТАТЛИН</span>{" "}
           работает на рынке инженерного проектирования с 2017 года. За это время
