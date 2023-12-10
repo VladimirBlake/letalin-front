@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Arrow from "@/images/arrow.svg";
 
-export default function ProfessionalsPagination({
+export default function Pagination({
   splideRef,
   pagesNum,
   currentPage,

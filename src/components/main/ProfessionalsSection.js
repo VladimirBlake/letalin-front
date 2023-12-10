@@ -3,10 +3,9 @@
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { useRef, useState } from "react";
-import Expert1 from "@/images/experts/expert1.png";
 import Image from "next/image";
 import { experts } from "@/data/Experts";
-import ProfessionalsPagination from "./ProfessionalsPagination";
+import Pagination from "./Pagination";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 export default function ProfessionalsSection() {
@@ -81,7 +80,7 @@ export default function ProfessionalsSection() {
         </SplideTrack>
 
         {width < 1024 && (
-          <ProfessionalsPagination
+          <Pagination
             setPage={setPage}
             currentPage={currentPage}
             pagesNum={pages}
