@@ -1,14 +1,40 @@
+import { redirect } from "next/dist/server/api-utils";
 import { useForm } from "react-hook-form";
 
 export default function MainForm() {
   const {
     register,
     handleSubmit,
+    reset,
     watch,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    data = { data: data };
+    let response = await fetch(
+      "http://" +
+        process.env.NEXT_PUBLIC_DB_HOST +
+        ":" +
+        process.env.NEXT_PUBLIC_DB_PORT +
+        "/api/resps",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(data),
+      }
+    );
+
+    if (!response.ok) {
+      console.log("Error");
+    }
+
+    console.log(response);
+
+    reset();
+  };
 
   return (
     <form className="mt-6" onSubmit={handleSubmit(onSubmit)}>
