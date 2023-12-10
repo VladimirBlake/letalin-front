@@ -12,10 +12,10 @@ export default function OurProjectsSection() {
         Наши проекты
       </h2>
       <div className="w-full h-[250px] md:container md:mx-auto md:h-[400px] xl:w-[880px] xl:h-[560px] mx-auto">
-        <Carousel slideInterval={4000}>
+        <Carousel>
           {projects.map((num) => (
             <div
-              className={`w-full h-[250px] md:h-[400px] xl:h-[560px] bg-cover`}
+              className={`w-full h-[250px] md:h-[400px] xl:h-[560px] xl:w-[880px] bg-cover`}
               style={{ backgroundImage: `url('/projects/project${num}.png')` }}
               key={num}
             ></div>
