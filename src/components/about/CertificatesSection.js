@@ -12,7 +12,7 @@ export default function CertificatesSection() {
   const slideRef = useRef(null);
   slideRef.current?.go(currentPage - 1);
 
-  const { width, height } = useWindowDimensions();
+  const [width] = useWindowDimensions();
 
   let chunks = 2;
 

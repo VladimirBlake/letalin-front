@@ -10,7 +10,7 @@ import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 export default function ProfessionalsSection() {
   const slideRef = useRef(null);
-  const { width, height } = useWindowDimensions();
+  const [width] = useWindowDimensions();
   const [currentPage, setPage] = useState(1);
   slideRef.current?.go(currentPage - 1);
 
