@@ -1,3 +1,4 @@
+"use client";
 import OurProjectsSection from "@/components/projects/OurProjectsSection";
 import ProjectIntroSection from "@/components/projects/ProjectIntroSection";
 

@@ -1,3 +1,4 @@
+"use client";
 import AboutSection from "@/components/main/AboutSection";
 import FormSection from "@/components/main/FormSection";
 import IntroSection from "@/components/main/IntroSection";

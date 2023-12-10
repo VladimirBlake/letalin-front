@@ -1,3 +1,4 @@
+"use client";
 import AboutIntroSection from "@/components/about/AboutIntroSection";
 import CertificatesSection from "@/components/about/CertificatesSection";
 import ParticipatesSection from "@/components/about/ParticipatesSection";
