@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AboutSection() {
   return (
     <section className="px-4 pt-4 xl:pt-8 sm:container mx-auto xl:px-0">
@@ -16,9 +18,11 @@ export default function AboutSection() {
         </p>
       </div>
       <div className="lg:flex items-center lg:mt-6 xl:mt-7">
-        <button className="w-full h-[52px] mt-6 lg:mt-0 text-white bg-green rounded-lg sm:w-40 sm:h-12 md:rounded-xl">
-          Заказать проект
-        </button>
+        <Link href="/#form">
+          <button className="w-full h-[52px] mt-6 lg:mt-0 text-white bg-green rounded-lg sm:w-40 sm:h-12 md:rounded-xl">
+            Заказать проект
+          </button>
+        </Link>
         <div className="hidden lg:block px-4 py-2 ml-8 border-black border-2">
           <span className="uppercase font-darco font-bold">
             Проектируем высокотехнологические объекты с 2017 года.

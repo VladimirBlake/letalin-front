@@ -6,7 +6,10 @@ import MainForm from "./MainForm";
 
 export default function FormSection() {
   return (
-    <section className="px-4 flex pt-16 sm:max-lg:container sm:mx-auto lg:gap-x-16 xl:gap-x-0 xl:pl-0 xl:pr-4 xl:justify-between">
+    <section
+      id="form"
+      className="px-4 flex pt-16 sm:max-lg:container sm:mx-auto lg:gap-x-16 xl:gap-x-0 xl:pl-0 xl:pr-4 xl:justify-between"
+    >
       <div className="flex">
         <Image src={Abstract1} alt="" className="hidden xl:block" />
         <Image src={Abstract2} alt="" className="hidden lg:block" />

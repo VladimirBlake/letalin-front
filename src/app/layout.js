@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 
 export const metadata = {
-  title: "Letalin",
+  title: "Letatlin",
   description:
     "ЛЕТАТЛИН — бюро проектирования высокотехнологичных объектов агропромышленного сектора, промышленных объектов, производственно-логистических комплексов",
 };
