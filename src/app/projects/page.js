@@ -1,3 +1,11 @@
+import OurProjectsSection from "@/components/projects/OurProjectsSection";
+import ProjectIntroSection from "@/components/projects/ProjectIntroSection";
+
 export default function ProjectsPage() {
-  return <div>123</div>;
+  return (
+    <>
+      <ProjectIntroSection />
+      <OurProjectsSection />
+    </>
+  );
 }
