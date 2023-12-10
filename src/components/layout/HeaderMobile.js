@@ -30,7 +30,7 @@ export default function HeaderMobile() {
           />
         </div>
       </div>
-      <MobileMenu isMenuOpen={isHamburgerOpen} />
+      <MobileMenu isMenuOpen={isHamburgerOpen} setMenuOpen={setHamburgerOpen} />
     </>
   );
 }

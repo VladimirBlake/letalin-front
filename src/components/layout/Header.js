@@ -7,16 +7,18 @@ export default function Header() {
   return (
     <div className="hidden lg:block lg:fixed lg:top-0 lg:z-50 h-24 bg-white w-full">
       <div className="flex justify-between container mx-auto items-center h-full px-4 xl:px-0">
-        <Image src={Logo} alt="" className="w-[45px] h-auto" />
+        <Link href="/">
+          <Image src={Logo} alt="" className="w-[45px] h-auto" />
+        </Link>
         <nav className="font-darco list-none flex gap-x-9 relative left-12 xl:left-16">
           <li className="hover:text-green transition-all">
-            <Link href="">Главная</Link>
+            <Link href="/">Главная</Link>
           </li>
           <li className="hover:text-green transition-all">
-            <Link href="">Проекты</Link>
+            <Link href="/projects">Проекты</Link>
           </li>
           <li className="hover:text-green transition-all">
-            <Link href="">О нас</Link>
+            <Link href="/about">О нас</Link>
           </li>
         </nav>
         <div className="flex items-center">
