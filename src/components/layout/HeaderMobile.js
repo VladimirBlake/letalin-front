@@ -6,6 +6,7 @@ import PhoneIcon from "@/images/phone.svg";
 import Logo from "@/images/logo.png";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
+import Link from "next/link";
 
 export default function HeaderMobile() {
   const [isHamburgerOpen, setHamburgerOpen] = useState(false);
@@ -14,12 +15,14 @@ export default function HeaderMobile() {
       <div className="h-16 bg-white px-4 flex justify-between items-center z-50 fixed w-full top-0 lg:hidden">
         <Image src={Logo} alt="" className="w-[45px] h-auto" />
         <div className="flex items-center">
-          <div className="w-9 h-9 bg-green rounded-full flex items-center justify-center">
-            <Image src={PhoneIcon} alt="" className="w-[22px] h-[22px]" />
+          <div className="w-9 h-9 bg-green rounded-full flex items-center justify-center cursor-pointer">
+            <Link href="tel:+74951056676">
+              <Image src={PhoneIcon} alt="" className="w-[22px] h-[22px]" />
+            </Link>
           </div>
-          <a className="ml-2" href="#">
+          <span className="ml-2" href="#">
             8 (495)-105-66-76
-          </a>
+          </span>
         </div>
         <div className="relative">
           <Hamburger

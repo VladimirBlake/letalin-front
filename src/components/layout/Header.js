@@ -24,7 +24,9 @@ export default function Header() {
         <div className="flex items-center">
           <div className="w-10 h-10 bg-green rounded-full flex items-center justify-center">
             <Link href="tel:+74951056676">
-              <Image src={PhoneIcon} alt="" className="w-6 h-6" />
+              <div className="cursor-pointer">
+                <Image src={PhoneIcon} alt="" className="w-6 h-6" />
+              </div>
             </Link>
           </div>
           <span className="ml-3">8 (495)-105-66-76</span>
