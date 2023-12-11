@@ -45,7 +45,7 @@ export default function ProfessionalsSection() {
       </h2>
       <p className="mt-2 mb-4 lg:text-lg xl:text-base xl:w-[500px] xl:mt-5 xl:mb-9">
         Наши сотрудники — эксперты строительного дела. Средний стаж — более 9
-        лет в строительной сфере и проектировке!
+        лет в строительной сфере и проектировании!
       </p>
       <Splide
         options={{

@@ -10,12 +10,13 @@ export default function AboutSection() {
           </span>{" "}
           — бюро проектирования высокотехнологичных объектов агропромышленного
           сектора, промышленных объектов, производственно-логистических
-          комплексов
+          комплексов. Проектируем высокотехнологичные промышленные объекты с
+          2017 года.
         </p>
-        <p className="font-darco font-normal mt-5 md:text-xl xl:hidden">
+        {/* <p className="font-darco font-normal mt-5 md:text-xl xl:hidden">
           Проектируем высокотехнологические объекты{" "}
           <span className="font-bold text-[#D56D70]">с 2017 года</span>.
-        </p>
+        </p> */}
       </div>
       <div className="lg:flex items-center lg:mt-6 xl:mt-7">
         <Link href="/#form">
@@ -23,11 +24,11 @@ export default function AboutSection() {
             Заказать проект
           </button>
         </Link>
-        <div className="hidden lg:block px-4 py-2 ml-8 border-black border-2">
+        {/* <div className="hidden lg:block px-4 py-2 ml-8 border-black border-2">
           <span className="uppercase font-darco font-bold">
             Проектируем высокотехнологические объекты с 2017 года.
           </span>
-        </div>
+        </div> */}
       </div>
     </section>
   );
