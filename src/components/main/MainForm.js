@@ -13,7 +13,8 @@ export default function MainForm() {
   const onSubmit = async (data) => {
     data = { data: data };
     let response = await fetch(
-      "http://" +
+      process.env.NEXT_PUBLIC_DB_PROTOCOL +
+        "://" +
         process.env.NEXT_PUBLIC_DB_HOST +
         ":" +
         process.env.NEXT_PUBLIC_DB_PORT +
