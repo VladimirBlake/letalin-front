@@ -23,7 +23,7 @@ export const experts = [
   },
   {
     image: Expert2,
-    name: "Давыдов И В",
+    name: "Давыдов Игорь Владимирович",
     title: "главный инженер проекта",
   },
   {

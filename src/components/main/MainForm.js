@@ -30,6 +30,8 @@ export default function MainForm() {
 
     if (!response.ok) {
       console.log("Error");
+    } else {
+      alert("Ваша заявка успешно отправлена!");
     }
 
     console.log(response);
