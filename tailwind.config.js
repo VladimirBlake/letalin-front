@@ -24,7 +24,7 @@ module.exports = {
     },
     fontFamily: {
       objectSans: ["Object Sans", "sans-serif"],
-      darco: ["Darco", "sans-serif"],
+      darco: ["Arial", "sans-serif"],
     },
   },
   plugins: [],

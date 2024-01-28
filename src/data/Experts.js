@@ -13,17 +13,16 @@ import Expert12 from "@/images/experts/expert12.png";
 import Expert13 from "@/images/experts/expert13.png";
 import Expert14 from "@/images/experts/expert14.png";
 import Expert15 from "@/images/experts/expert15.png";
-import Expert16 from "@/images/experts/expert16.png";
 
 export const experts = [
   {
     image: Expert1,
-    name: "Завьялов Андрей Николаевич",
-    title: "главный инженер проекта, ведущий конструктор",
+    name: "Давыдов Игорь Владимирович",
+    title: "главный инженер проекта",
   },
   {
     image: Expert2,
-    name: "Давыдов Игорь Владимирович",
+    name: "Костина Ольга Юрьевна",
     title: "главный инженер проекта",
   },
   {
@@ -49,12 +48,12 @@ export const experts = [
   {
     image: Expert7,
     name: "Валеев Ильдар Рафкатович",
-    title: "Ведущий инженер-конструктор",
+    title: "ведущий инженер-конструктор",
   },
   {
     image: Expert8,
     name: "Нургалеева Ильмира Илгизаровна",
-    title: "ведущий инженер проектировщик по электроснабжению",
+    title: "руководитель отдела кадров",
   },
   {
     image: Expert9,
@@ -79,7 +78,7 @@ export const experts = [
   {
     image: Expert13,
     name: "Малькова Ольга Радиковна",
-    title: "руководитель отдела кадров",
+    title: "главный инженер проекта, ведущий конструктор",
   },
   {
     image: Expert14,
@@ -88,11 +87,6 @@ export const experts = [
   },
   {
     image: Expert15,
-    name: "Костина Ольга Юрьевна",
-    title: "ведущий юрисконсульт",
-  },
-  {
-    image: Expert16,
     name: "Вахитова Венера Темиршиновна",
     title: "юрисконсульт",
   },

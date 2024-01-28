@@ -68,7 +68,7 @@ export default function ProfessionalsSection() {
                       alt=""
                       className="w-[156px] h-[156px] xl:w-[224px] xl:h-[224px]"
                     />
-                    <p className="font-darco font-bold text-sm text-center mt-2">
+                    <p className="font-darco font-bold text-sm text-center mt-2 xl:text-xl">
                       {expert.name}
                     </p>
                     <p className="text-center text-sm mt-1">{expert.title}</p>

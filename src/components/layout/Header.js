@@ -18,6 +18,9 @@ export default function Header() {
             <Link href="/projects">Проекты</Link>
           </li>
           <li className="hover:text-green transition-all">
+            <Link href="/services">Услуги</Link>
+          </li>
+          <li className="hover:text-green transition-all">
             <Link href="/about">О нас</Link>
           </li>
         </nav>
