@@ -21,6 +21,7 @@ module.exports = {
     backgroundImage: {
       intro: "url('/intro.png')",
       projects: "url('/intro_projects.png')",
+      services: "url('/intro_services.png')",
     },
     fontFamily: {
       objectSans: ["Object Sans", "sans-serif"],

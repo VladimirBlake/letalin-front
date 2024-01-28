@@ -18,6 +18,11 @@ export default function MobileMenu({ isMenuOpen, setMenuOpen }) {
               </Link>
             </li>
             <li>
+              <Link onClick={() => setMenuOpen(false)} href="/services">
+                Услуги
+              </Link>
+            </li>
+            <li>
               <Link onClick={() => setMenuOpen(false)} href="/about">
                 О нас
               </Link>
