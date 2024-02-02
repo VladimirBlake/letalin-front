@@ -5,10 +5,17 @@ import ServicesServiceSection from "@/components/services/ServicesServiceSection
 import Service1 from "@/images/services/service1.png";
 import { services } from "@/data/Services";
 import ExtraServicesSection from "@/components/services/ExtraServicesSection";
+import Blueprint from "@/images/services/blueprint.png";
+import Image from "next/image";
 
 export default function ServicesPage() {
   return (
-    <main>
+    <main className="relative">
+      <Image
+        src={Blueprint}
+        alt=""
+        className="hidden xl:block absolute -z-10 right-[5rem] top-[1050px]"
+      />
       <ServicesIntroSection />
       {services.map((service, i) => (
         <ServicesServiceSection

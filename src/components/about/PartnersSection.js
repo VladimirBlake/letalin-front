@@ -5,11 +5,23 @@ import Partner3 from "@/images/partners/partner3.png";
 import Partner4 from "@/images/partners/partner4.png";
 import Partner5 from "@/images/partners/partner5.png";
 import Partner6 from "@/images/partners/partner6.png";
+import Blueprint2 from "@/images/about/blueprint2.png";
+import Blueprint3 from "@/images/about/blueprint3.png";
 
 export default function PartnersSection() {
   return (
-    <section className="px-4 pt-16 sm:container sm:mx-auto pb-8">
-      <h2 className="font-darco text-2xl font-bold md:text-xl xl:text-3xl">
+    <section className="relative px-4 xl:px-0 pt-16 sm:container sm:mx-auto pb-8">
+      <Image
+        src={Blueprint2}
+        alt=""
+        className="absolute -z-10 -rotate-[23deg] max-w-none w-[610px] h-auto -left-56 top-24 md:left-auto md:rotate-0 md:top-12 lg:right-0 xl:w-[872px] xl:-right-24 xl:-top-10"
+      />
+      <Image
+        src={Blueprint3}
+        alt=""
+        className="-z-10 hidden lg:block absolute max-w-none w-[400px] h-auto xl:w-[447px] xl:top-24 xl:-left-16"
+      />
+      <h2 className="font-darco text-2xl font-bold md:text-xl xl:text-4xl">
         Наши партнёры
       </h2>
       <div className="grid grid-cols-2 gap-y-10 items-center justify-around mt-8 lg:grid-cols-3 lg:gap-y-14 xl:grid-cols-[173px_minmax(0,_1fr)_320px]">
