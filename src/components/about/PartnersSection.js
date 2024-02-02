@@ -10,7 +10,7 @@ import Blueprint3 from "@/images/about/blueprint3.png";
 
 export default function PartnersSection() {
   return (
-    <section className="relative px-4 xl:px-0 pt-16 sm:container sm:mx-auto pb-8">
+    <section className="relative max-sm:overflow-x-clip px-4 xl:px-0 pt-16 sm:container sm:mx-auto pb-8">
       <Image
         src={Blueprint2}
         alt=""
