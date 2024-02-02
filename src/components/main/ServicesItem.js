@@ -7,7 +7,7 @@ export default function ServicesItem({
   mobileImgHeight,
 }) {
   return (
-    <div className="border-[#EBEBEB] border-2 p-4 h-auto rounded-xl">
+    <div className="border-[#EBEBEB] border-2 p-4 h-auto rounded-xl bg-white">
       <div className="w-full flex items-center justify-center mt-2 xl:h-[75px]">
         <Image
           src={serviceImg}

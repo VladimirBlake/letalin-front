@@ -6,6 +6,8 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import { experts } from "@/data/Experts";
 import Pagination from "./Pagination";
+import Background from "@/images/bird-bg.png";
+import Background2 from "@/images/main-blueprint2.png";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 export default function ProfessionalsSection() {
@@ -56,7 +58,18 @@ export default function ProfessionalsSection() {
         hasTrack={false}
         ref={slideRef}
         onMove={(splide, index) => setPage(index + 1)}
+        className="relative"
       >
+        <Image
+          src={Background}
+          alt=""
+          className="absolute -z-10 top-14 left-[50%] -translate-x-1/2"
+        />
+        <Image
+          src={Background2}
+          alt=""
+          className="hidden xl:block absolute -z-10 -bottom-72 -left-16"
+        />
         <SplideTrack>
           {expertChunks.map((chunk, i) => (
             <SplideSlide key={i}>

@@ -1,8 +1,15 @@
 import Link from "next/link";
+import Blueprint from "@/images/main-blueprint.png";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="px-4 pt-4 xl:pt-8 sm:container mx-auto xl:px-0">
+    <section className="relative px-4 pt-4 xl:pt-8 sm:container mx-auto xl:px-0">
+      <Image
+        src={Blueprint}
+        alt=""
+        className="absolute w-[360px] right-0 max-w-none h-auto xl:block -z-10 top-0 xl:-right-20 xl:w-[700px]"
+      />
       <div>
         <p className="xl:text-2xl">
           <span className="font-darco font-bold md:text-xl xl:text-3xl">
