@@ -4,9 +4,9 @@ import ProjectIntroSection from "@/components/projects/ProjectIntroSection";
 
 export default function ProjectsPage() {
   return (
-    <>
+    <main className="overflow-x-clip">
       <ProjectIntroSection />
       <OurProjectsSection />
-    </>
+    </main>
   );
 }

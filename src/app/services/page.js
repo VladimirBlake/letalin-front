@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function ServicesPage() {
   return (
-    <main className="relative">
+    <main className="overflow-x-clip relative">
       <Image
         src={Blueprint}
         alt=""
